@@ -24,6 +24,21 @@
     --dark-grey: #1a1a1a;
 }
 
+body {
+    font-family: "Helvetica Now",
+        Helvetica,
+        Arial,
+        sans-serif;
+    ;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* #endregion utilities */
 
 /* #region header */
@@ -33,7 +48,7 @@
 }
 
 .orange-bg {
-    background-color: orange;
+    background-color: var(--orange);
     box-shadow: 1px 0px 5px;
 }
 
@@ -56,14 +71,14 @@
 
 /* #region main */
 .row {
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 3rem;
 }
 
 .row img {
     max-width: 400px;
-
 }
 
 .item-preview {
@@ -104,4 +119,26 @@
 }
 
 /* ------------------------sconto */
+/* --------------------------------------item-description */
+.item-description p {
+    font-size: small;
+}
+
+.item-description .actual-price {
+    color: red;
+    font-weight: bold;
+}
+
+.item-description .old-price {
+    text-decoration: line-through;
+}
+
+/* --------------------------------------item-description */
+
+/* --------------------------------------------------------------------hover propeties */
+.showed-img:hover {
+    visibility: visible;
+}
+
+/* --------------------------------------------------------------------hover propeties */
 /* #endregion main */
