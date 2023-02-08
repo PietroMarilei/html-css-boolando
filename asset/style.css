@@ -18,12 +18,17 @@
     display: flex;
 }
 
+:root {
+    --orange: #ff6900;
+    --white: #ffffff;
+    --dark-grey: #1a1a1a;
+}
 
 /* #endregion utilities */
 
 /* #region header */
 .app-header {
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -31,6 +36,8 @@
     background-color: orange;
     box-shadow: 1px 0px 5px;
 }
+
+/* perché si rompe se stringo? */
 
 .left-selector {
     gap: 1rem;
@@ -48,5 +55,53 @@
 /* #endregion header */
 
 /* #region main */
-.row
+.row {
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.row img {
+    max-width: 400px;
+
+}
+
+.item-preview {
+    position: relative;
+}
+
+/* -----------------------------cuoricino */
+.col-4 .fa-solid {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+/* -----------------------------cuoricino */
+
+/* ------------------------sconto */
+.col-4 .badge {
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0.5rem;
+    position: absolute;
+    top: 92%;
+    left: 0;
+}
+
+.col-4 .discount {
+    background-color: red;
+    padding: 3px 10px;
+    color: #ffffff;
+}
+
+.col-4 .green-washing {
+    background-color: green;
+    padding: 3px 10px;
+    color: #ffffff;
+}
+
+/* ------------------------sconto */
 /* #endregion main */
