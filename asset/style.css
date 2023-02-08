@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 /* #endregion reset */
 
 /* #region utilities */
@@ -39,6 +43,14 @@ body {
     left: 0;
 }
 
+/* --------------------------------------------------------------------hover propeties */
+.col-4:hover .showed-img {
+    cursor: pointer;
+    visibility: visible;
+
+}
+
+/* --------------------------------------------------------------------hover propeties */
 /* #endregion utilities */
 
 /* #region header */
@@ -56,6 +68,8 @@ body {
 
 .left-selector {
     gap: 1rem;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .header-logo img {
@@ -65,6 +79,7 @@ body {
 
 .right-icons {
     gap: 1rem;
+    color: #ffffff;
 }
 
 /* #endregion header */
@@ -135,10 +150,5 @@ body {
 
 /* --------------------------------------item-description */
 
-/* --------------------------------------------------------------------hover propeties */
-.showed-img:hover {
-    visibility: visible;
-}
 
-/* --------------------------------------------------------------------hover propeties */
 /* #endregion main */
