@@ -37,17 +37,18 @@ body {
 }
 
 .hidden {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: none;
 }
 
 /* --------------------------------------------------------------------hover propeties */
 .col-4:hover .showed-img {
     cursor: pointer;
-    visibility: visible;
+    display: inline-block;
 
+}
+
+.col-4:hover .base-img {
+    display: none;
 }
 
 /* --------------------------------------------------------------------hover propeties */
