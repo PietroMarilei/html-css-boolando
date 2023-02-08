@@ -51,6 +51,10 @@ body {
     display: none;
 }
 
+.col-4:hover .fa-solid {
+    display: block;
+}
+
 /* --------------------------------------------------------------------hover propeties */
 /* #endregion utilities */
 
@@ -103,6 +107,15 @@ body {
 
 /* -----------------------------cuoricino */
 .col-4 .fa-solid {
+    display: none;
+    position: absolute;
+    top: 2%;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.col-4 .fa-regular {
     position: absolute;
     top: 2%;
     right: 0;
@@ -153,3 +166,33 @@ body {
 
 
 /* #endregion main */
+
+/* #region footer */
+.dark-bg {
+    background-color: #1a1a1a;
+}
+
+.app-footer {
+    justify-content: space-between;
+    color: #ffffff;
+    margin-top: 2rem;
+    padding: 2rem 0;
+
+}
+
+.left-info section {
+    margin-bottom: 10px;
+}
+
+.left-info ul {
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.social-icons {
+    padding-top: 10px;
+    justify-content: space-around;
+
+}
+
+/* #endregion footer */
