@@ -55,18 +55,26 @@ body {
     display: block;
 }
 
+
+
 /* --------------------------------------------------------------------hover propeties */
 /* #endregion utilities */
 
 /* #region header */
 .app-header {
+
     justify-content: space-around;
     align-items: center;
 }
 
 .orange-bg {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* questa porta il banner davanti */
     background-color: var(--orange);
-    box-shadow: 1px 0px 5px;
+    box-shadow: 0 0 10px rgb(71, 74, 74);
 }
 
 /* perché si rompe se stringo? */
